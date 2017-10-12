@@ -1,0 +1,56 @@
+\documentclass[12pt,letterpaper]{IEEEtran}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-tabla]{babel}
+%\renewcommand{\tablename}{Tabla}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\title{Proyecto: Robot equilibrista}
+\author{Luis José Marín Monge\\  Juan Vargas Fernandez}
+\date{\today}
+
+
+\newcommand\MYhyperrefoptions{bookmarks=true,bookmarksnumbered=true,
+pdfpagemode={UseOutlines},plainpages=false,pdfpagelabels=true,
+colorlinks=true,linkcolor={black},citecolor={black},
+urlcolor={black}}
+
+\usepackage[\MYhyperrefoptions]{hyperref}
+
+\begin{document}
+\hypersetup{pdftitle={Laboratorio 3: ALU},
+pdfsubject={BINGE-62 Microcontroladores},
+pdfauthor={Luis José Marín Monge, Juan Vargas Fernandez},
+pdfkeywords={vhdl, decodificador, sistemas digitales}}
+
+\renewcommand{\leftmark}{UNIVERSIDAD LATINA DE COSTA RICA -- BINGE-62 Microcontroladores}
+
+\maketitle
+
+\section{Descripción del proyecto}
+
+Es un robot que se apoya en dos ruedas y se mantiene en equilibrio.\\
+Este tiene dos modos en el cual en uno se mantiene en equilibrio de manera  estática y si recibe una fuerza externa deberá moverse para compensarla.\\
+En el otro modo deberá mantenerse en equilibrio pero siguiendo una línea.
+
+
+\section{Requerimientos}
+
+\begin{itemize}
+	\item Crear la maqueta del robot.
+	
+	\item Controlar dos motores que sean capaces de mover las ruedas.
+	
+	\item Detectar la inclinación del robot.
+	
+	\item Detectar la línea.
+	
+	\item Seguir la línea.
+\end{itemize}
+
+%\section{Aspectos por mejorar}
+
+%\begin{itemize}
+%	\item Aunque se logró cumplir con los requisitos de este laboratorio se desea mejorar la información que dan los displays, para que estos puedan dar información de que paso se esta realizando.  
+%\end{itemize}
+
+\end{document}

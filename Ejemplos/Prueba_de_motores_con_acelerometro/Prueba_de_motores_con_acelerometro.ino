@@ -22,13 +22,13 @@ void loop() {
 
  Serial.println(out);
 
- if (((float)z - zero_Gz)/scale_z >= 0.10){
+ if (((float)z - zero_Gz)/scale_z >= 0.3){
     digitalWrite(rightf, HIGH);
     digitalWrite(rightb, LOW);
     digitalWrite(leftf, HIGH);
     digitalWrite(leftb, LOW);
     out = "Forward";   
- } else if (((float)z - zero_Gz)/scale_z <= -0.10){
+ } else if (((float)z - zero_Gz)/scale_z <= -0.1){
     digitalWrite(rightf, LOW);
     digitalWrite(rightb, HIGH);
     digitalWrite(leftf, LOW);
